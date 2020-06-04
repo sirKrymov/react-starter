@@ -1,0 +1,47 @@
+@import '../../../../styles/mixins';
+
+.field-label {
+  position: relative;
+
+  &--with-error {
+    padding-bottom: 24px;
+  }
+
+  &__label {
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    height: 24px;
+    left: 0;
+    top: -28px;
+    @include text-ellipsis;
+
+    &--block {
+      margin-bottom: 4px;
+      position: static;
+    }
+  }
+
+  &__right-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+  }
+
+  &__des {
+    align-items: center;
+    max-width: 100%;
+    position: absolute;
+    display: flex;
+    height: 24px;
+    bottom: 0;
+    right: 0;
+  }
+}

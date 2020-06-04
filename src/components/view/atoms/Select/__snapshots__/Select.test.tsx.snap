@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<UiSize
+  height="md"
+>
+  <StateManager
+    className="select-wrapper"
+    classNamePrefix="select"
+    defaultInputValue=""
+    defaultMenuIsOpen={false}
+    defaultValue={null}
+    id="check-select"
+    isSearchable={true}
+    onChange={[MockFunction]}
+    options={
+      Array [
+        Object {
+          "label": "Test 1",
+          "value": 1,
+        },
+        Object {
+          "label": "Test 2",
+          "value": 2,
+        },
+      ]
+    }
+    value={null}
+  />
+</UiSize>
+`;

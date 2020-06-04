@@ -1,0 +1,15 @@
+{
+  "en": {
+    "authHeader": {
+      "signUpButtonTitle": "Sign up"
+    },
+    "signinPage": {
+      "fieldRequired": "Required",
+      "emailField": {
+        "placeholder": "Enter your email here",
+        "label": "Email address"
+      },
+      "formTitle": "Sign in"
+    }
+  }
+}

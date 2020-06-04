@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Textarea> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<UiSize
+  height="full"
+  width="full"
+>
+  <div
+    className="textarea"
+  >
+    <textarea
+      id="check-textarea"
+      name="textarea"
+      onChange={[MockFunction]}
+      value=""
+    />
+  </div>
+</UiSize>
+`;

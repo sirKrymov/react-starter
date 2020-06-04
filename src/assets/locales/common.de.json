@@ -1,0 +1,15 @@
+{
+  "de": {
+    "authHeader": {
+      "signUpButtonTitle": "Anmelden"
+    },
+    "signinPage": {
+      "fieldRequired": "Erforderlich",
+      "emailField": {
+        "placeholder": "Gib deine E-Mail hier ein",
+        "label": "E-Mail-Addresse"
+      },
+      "formTitle": "Anmeldung"
+    }
+  }
+}

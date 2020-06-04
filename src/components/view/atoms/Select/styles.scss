@@ -1,0 +1,64 @@
+@import '../../../../styles/configs';
+
+.select-wrapper {
+  min-height: inherit;
+  box-shadow: none;
+  height: 100%;
+
+  &--error {
+    .select__control {
+      border: 1px solid var(--error) !important;
+    }
+  }
+
+  &--disabled {
+    .select__control--is-focused {
+      border: 1px solid var(--borderPrimary) !important;
+    }
+
+    .select__menu {
+      display: none !important;
+    }
+  }
+}
+
+.select {
+  min-height: inherit;
+
+  &__control {
+    border-radius: $border-radius !important;
+    transition: border $anim-time-fast !important;
+    background: var(--bgPrimary) !important;
+    min-height: inherit !important;
+    box-shadow: none !important;
+    border: 1px solid var(--borderPrimary) !important;
+    height: 100%;
+
+    &--is-focused {
+      border: 1px solid var(--thirdy) !important;
+    }
+  }
+
+  &__value-container {
+    padding-left: 16px !important;
+    min-height: inherit !important;
+  }
+
+  &__menu {
+    border-radius: $border-radius !important;
+    box-shadow: $box-shadow-light !important;
+    animation: mount $anim-time;
+    overflow: hidden !important;
+  }
+
+  &__menu-list {
+    padding: 0 !important;
+  }
+
+  &__option {
+    &:hover {
+      background: var(--primaryDark) !important;
+      cursor: pointer !important;
+    }
+  }
+}

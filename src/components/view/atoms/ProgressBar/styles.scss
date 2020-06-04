@@ -1,0 +1,35 @@
+@import '../../../../styles/configs';
+
+$bar-height: 24px;
+
+.progress-bar {
+  align-items: center;
+  display: flex;
+
+  &__outer {
+    background-color: var(--bgPrimary);
+    border-radius: $bar-height / 2;
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--borderPrimary);
+    height: $bar-height;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__fill {
+    background-color: var(--secondary);
+    border-radius: $bar-height / 2;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 2;
+    height: $bar-height;
+    left: -1px;
+    top: 50%;
+  }
+
+  &__label {
+    text-align: right;
+    min-width: 50px;
+  }
+}

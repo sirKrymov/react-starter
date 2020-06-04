@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HamburgerButton> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<button
+  className="hamburger-btn"
+  id="hamburger"
+  onClick={[Function]}
+>
+  <p />
+  <p />
+  <p />
+</button>
+`;

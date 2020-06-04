@@ -1,0 +1,31 @@
+@import '../../../../styles/mixins';
+
+.country-flag-select {
+  .flag-select {
+    padding-bottom: 0;
+    height: 36px;
+    width: 40px;
+
+    &__btn {
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__option {
+      margin: 0;
+    }
+
+    &__options {
+      transform: translateX(-50%);
+      margin: 0;
+      width: 100%;
+      left: 50%;
+      background: transparent;
+    }
+  }
+}

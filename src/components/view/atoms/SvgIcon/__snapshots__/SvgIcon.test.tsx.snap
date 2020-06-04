@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SvgIcon> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<ReactSVG
+  afterInjection={[Function]}
+  beforeInjection={[Function]}
+  className="svg-icon"
+  evalScripts="never"
+  fallback={null}
+  loading={null}
+  renumerateIRIElements={true}
+  src="eye_crossed.svg"
+  wrapper="div"
+/>
+`;

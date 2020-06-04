@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Logo> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="logo"
+  id="main-logo"
+>
+  <img
+    alt="logo"
+    className="img-contain"
+    src="krymov-logo.png"
+  />
+</div>
+`;

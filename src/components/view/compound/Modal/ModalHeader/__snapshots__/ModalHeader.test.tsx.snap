@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ModalHeader> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="modal-header"
+>
+  <Typography
+    className="modal-header__title"
+    noWrap={true}
+    variant="h3"
+  >
+    Check title
+  </Typography>
+  <ReactIcon
+    className="modal-header__close-btn"
+    onClick={[Function]}
+    size="xl"
+  >
+    <IoMdCloseCircle />
+  </ReactIcon>
+</div>
+`;

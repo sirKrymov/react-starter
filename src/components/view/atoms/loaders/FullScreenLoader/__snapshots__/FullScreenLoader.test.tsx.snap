@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FullScreenLoader> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="full-screen-loader"
+>
+  <div
+    className="container"
+  >
+    <span
+      className="layer"
+    />
+    <span
+      className="layer"
+    />
+    <span
+      className="layer"
+    />
+  </div>
+</div>
+`;

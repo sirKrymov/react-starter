@@ -1,0 +1,59 @@
+@import '../../../../styles/configs';
+
+.ui-size {
+  &--width-xs {
+    width: 80px;
+  }
+
+  &--width-sm {
+    width: 120px;
+
+    @media (max-width: $breakpoint-up-md) {
+      width: 80px;
+    }
+  }
+
+  &--width-md {
+    width: 150px;
+  }
+
+  &--width-lg {
+    width: 200px;
+  }
+
+  &--width-xl {
+    width: 300px;
+  }
+
+  &--width-full {
+    width: 100%;
+  }
+
+  &--width-content {
+    display: inline-flex;
+  }
+
+  &--height-xs {
+    min-height: 28px;
+    font-size: 0.8125rem;
+  }
+
+  &--height-sm {
+    min-height: 36px;
+    font-size: 0.875rem;
+  }
+
+  &--height-md {
+    min-height: 44px;
+    font-size: 1rem;
+  }
+
+  &--height-lg {
+    min-height: 52px;
+    font-size: 1.125rem;
+  }
+
+  &--height-full {
+    height: 100%;
+  }
+}

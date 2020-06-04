@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AuthHeader> template sub component WHEN the component loads THEN it should match snapshot 1`] = `
+<header
+  className="auth-header"
+>
+  <ContentLimiter>
+    <div
+      className="auth-header__content"
+    >
+      <Memo(LogoBase)
+        id="auth-logo"
+      />
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          }
+        }
+      >
+        <button
+          onClick={[Function]}
+        >
+          Toasts
+        </button>
+        <Memo(LngChangerBase) />
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "margin": "0 16px",
+            }
+          }
+        >
+          <Switch
+            id="dark-mode-switcher"
+            name="darkModeSwitcher"
+            onChange={[Function]}
+            value={false}
+          />
+        </div>
+      </div>
+    </div>
+  </ContentLimiter>
+</header>
+`;

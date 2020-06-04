@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputPhone> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="ui-size ui-size--height-md ui-size--width-full"
+>
+  <div
+    className="input-phone"
+    id="check-input-phone"
+  >
+    <div
+      className=" react-tel-input"
+      onKeyDown={[Function]}
+      style={Object {}}
+    >
+      <input
+        autoComplete="off"
+        className=" form-control"
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onCopy={[Function]}
+        onDoubleClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="1 (702) 123-4567"
+        style={Object {}}
+        type="tel"
+        value=""
+      />
+      <div
+        className=" flag-dropdown"
+        role="button"
+        style={Object {}}
+        tabIndex="0"
+      >
+        <div
+          className="selected-flag"
+          onClick={[Function]}
+          title=""
+        >
+          <div
+            className="flag 0"
+          >
+            <div
+              className="arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

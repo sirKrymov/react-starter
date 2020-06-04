@@ -1,0 +1,12 @@
+@import '../../../../styles/mixins';
+
+.content-limiter {
+  max-width: 1704px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+
+  &--fluid {
+    max-width: 100%;
+  }
+}

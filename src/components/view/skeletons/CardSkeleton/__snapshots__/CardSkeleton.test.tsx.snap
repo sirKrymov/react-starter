@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardSkeleton> skeleton component WHEN the component loads THEN it should match snapshot 1`] = `
+<ContentLoader
+  backgroundColor="#ecebeb"
+  foregroundColor="#f3f3f3"
+  height={176}
+  speed={2}
+  uniqueKey="card-skeleton-uniquekey"
+  width={336}
+>
+  <rect
+    height="18"
+    rx="0"
+    ry="0"
+    width="105"
+    x="0"
+    y="5"
+  />
+  <rect
+    height="27"
+    rx="0"
+    ry="0"
+    width="159"
+    x="0"
+    y="35"
+  />
+  <rect
+    height="50"
+    rx="0"
+    ry="0"
+    width="335"
+    x="0"
+    y="105"
+  />
+  <rect
+    height="15"
+    rx="0"
+    ry="0"
+    width="41"
+    x="0"
+    y="163"
+  />
+  <rect
+    height="15"
+    rx="0"
+    ry="0"
+    width="41"
+    x="295"
+    y="163"
+  />
+</ContentLoader>
+`;

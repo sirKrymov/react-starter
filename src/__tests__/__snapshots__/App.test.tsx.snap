@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App> component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="auth-template"
+>
+  <header
+    className="auth-header"
+  >
+    <div
+      className="content-limiter"
+    >
+      <div
+        className="auth-header__content"
+      >
+        <div
+          className="logo"
+          id="auth-logo"
+        >
+          <img
+            alt="logo"
+            className="img-contain"
+            src="krymov-logo.png"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        >
+          <button
+            onClick={[Function]}
+          >
+            Toasts
+          </button>
+          <div
+            className="country-flag-select"
+            id="multi-language-select"
+          >
+            <div
+              className="flag-select "
+            >
+              <button
+                aria-expanded={false}
+                aria-haspopup="listbox"
+                aria-labelledby="select_flag_button"
+                className="flag-select__btn"
+                disabled={false}
+                id="select_flag_button"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                style={
+                  Object {
+                    "fontSize": "16px",
+                  }
+                }
+              >
+                <span
+                  className="flag-select__option flag-select__option--placeholder"
+                >
+                  <img
+                    alt="GB"
+                    className="flag-select__option__icon"
+                    src={
+                      Object {
+                        "ReactComponent": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "__esModule": true,
+                        "default": "gb.svg",
+                      }
+                    }
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "margin": "0 16px",
+              }
+            }
+          >
+            <div
+              className="switch switch--size-md"
+            >
+              <input
+                checked={false}
+                id="dark-mode-switcher"
+                name="darkModeSwitcher"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="switch__label"
+                htmlFor="dark-mode-switcher"
+              >
+                <span
+                  className="switch__button"
+                />
+              </label>
+            </div>
+          </div>
+          <div
+            className="ui-size ui-size--height-sm ui-size--width-content"
+          >
+            <a
+              className="link-button button--font-weight-bold link-button--variant-outlined link-button--padding-sm link-button--color-secondary"
+              href="/auth/signup"
+              id="auth-sign-up-link"
+              onClick={[Function]}
+            >
+              <p
+                className="typography typography--display-initial typography--variant-inherit typography--color-inherit typography--align-left typography--font-roboto"
+              >
+                authHeader.signUpButtonTitle
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form
+      action="#"
+      className="form"
+      onReset={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-block form-block--mb-s6"
+      >
+        <h1
+          className="typography typography--display-initial typography--variant-h1 typography--color-textPrimary typography--align-left typography--font-roboto"
+        >
+          signinPage.formTitle
+        </h1>
+      </div>
+      <div
+        className="form-block form-block--mb-s2"
+      >
+        <div
+          className="field-label field-label--with-error"
+          id=""
+        >
+          <div
+            className="field-label__label field-label__label--block"
+          >
+            <p
+              className="typography typography--display-initial typography--variant-body2 typography--color-textPrimary typography--align-left typography--font-roboto"
+            >
+              signinPage.emailField.label
+            </p>
+            <p
+              className="typography typography--display-initial typography--variant-body4 typography--color-textLight typography--align-left typography--font-roboto"
+            >
+              signinPage.fieldRequired
+            </p>
+          </div>
+          <div
+            className="ui-size ui-size--height-md ui-size--width-full"
+          >
+            <div
+              className="input"
+            >
+              <input
+                autoComplete="off"
+                id="si-form-email"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="signinPage.emailField.placeholder"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="field-label field-label--with-error"
+          id=""
+        >
+          <div
+            className="field-label__label field-label__label--block"
+          >
+            <p
+              className="typography typography--display-initial typography--variant-body2 typography--color-textPrimary typography--align-left typography--font-roboto"
+            >
+              Password
+            </p>
+            <p
+              className="typography typography--display-initial typography--variant-body4 typography--color-textLight typography--align-left typography--font-roboto"
+            >
+              Required
+            </p>
+          </div>
+          <div
+            className="ui-size ui-size--height-md ui-size--width-full"
+          >
+            <div
+              className="input input--right-block-md"
+            >
+              <input
+                autoComplete="new-password"
+                id="si-form-password"
+                name="password"
+                onBlur={[Function]}
+                onChange={[Function]}
+                placeholder="Enter your password here"
+                type="password"
+                value=""
+              />
+              <div
+                className="input__right-block input__right-block--md"
+              >
+                <div
+                  className="visibility-icon"
+                  id="si-form-password-icon"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="svg-icon svg-icon--size-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="form-block form-block--mb-s3"
+      >
+        <div
+          className="ui-size ui-size--height-lg ui-size--width-full"
+        >
+          <button
+            className="button button--font-weight-bold button--variant-contained button--color-secondary"
+            id="si-form-submit-btn"
+            type="submit"
+          >
+            <div
+              className="button__content"
+            >
+              <p
+                className="typography typography--display-initial typography--variant-inherit typography--color-inherit typography--align-left typography--font-roboto"
+              >
+                Sign in
+              </p>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        className="form-block form-block--align-center"
+      >
+        <a
+          className="custom-link"
+          href="/auth/reset-password"
+          id="si-form-back-link"
+          onClick={[Function]}
+        >
+          Forgot password?
+        </a>
+      </div>
+    </form>
+  </main>
+</div>
+`;

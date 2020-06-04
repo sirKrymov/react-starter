@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputCode> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="input-code"
+>
+  <t
+    autoFocus={true}
+    className="input-code__field"
+    disabled={false}
+    fields={4}
+    filterChars={
+      Array [
+        "-",
+        ".",
+      ]
+    }
+    filterKeyCodes={
+      Array [
+        189,
+        190,
+      ]
+    }
+    forceUppercase={false}
+    id="check-input-phone"
+    isValid={true}
+    onChange={[MockFunction]}
+    type="number"
+    value=""
+  />
+</div>
+`;

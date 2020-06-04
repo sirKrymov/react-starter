@@ -1,0 +1,85 @@
+@import '../../../../styles/configs';
+
+.multi-select-wrapper {
+  min-height: inherit;
+  box-shadow: none;
+  height: 100%;
+
+  &--error {
+    .multi-select__control {
+      border: 1px solid var(--error) !important;
+    }
+  }
+
+  &--disabled {
+    .multi-select__control--is-focused {
+      border: 1px solid var(--borderPrimary) !important;
+    }
+
+    .multi-select__menu {
+      display: none !important;
+    }
+  }
+}
+
+.multi-select {
+  min-height: inherit;
+
+  &__control {
+    border-radius: $border-radius !important;
+    transition: border $anim-time-fast !important;
+    background: var(--bgPrimary) !important;
+    min-height: inherit !important;
+    box-shadow: none !important;
+    border: 1px solid var(--borderPrimary) !important;
+    height: 100%;
+
+    &--is-focused {
+      border: 1px solid var(--thirdy) !important;
+    }
+  }
+
+  &__value-container {
+    padding-left: 16px !important;
+    min-height: inherit !important;
+  }
+
+  &__multi-value {
+    border-radius: $border-radius !important;
+    background: #fff !important;
+    padding: 2px 4px !important;
+  }
+
+  &__multi-value__label {
+    font-size: 14px !important;
+  }
+
+  &__multi-value__remove {
+    &:hover {
+      background: none !important;
+      cursor: pointer;
+    }
+  }
+
+  &__indicator {
+    cursor: pointer;
+  }
+
+  &__menu {
+    border-radius: $border-radius !important;
+    box-shadow: $box-shadow-light !important;
+    animation: mount $anim-time;
+    overflow: hidden !important;
+  }
+
+  &__menu-list {
+    padding: 0 !important;
+  }
+
+  &__option {
+    &:hover {
+      background: var(--primaryDark) !important;
+      cursor: pointer !important;
+    }
+  }
+}

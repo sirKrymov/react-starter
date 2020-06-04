@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="avatar avatar--xs"
+  id="avatar"
+  style={Object {}}
+>
+  <img
+    alt="avatar"
+    className="img-cover"
+    src="https://f0.pngfuel.com/png/980/886/male-portrait-avatar-png-clip-art.png"
+  />
+</div>
+`;

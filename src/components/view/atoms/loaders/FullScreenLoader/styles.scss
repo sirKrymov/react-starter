@@ -1,0 +1,79 @@
+/* stylelint-disable max-nesting-depth */
+$duration: 1s;
+$dimension: 3em;
+
+.full-screen-loader {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  z-index: 100000;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+
+  &::before {
+    background-color: #000;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .container {
+    height: $dimension;
+    width: $dimension;
+
+    .layer {
+      box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+      transform: translate(-50%, -50%) rotateX(50deg) rotateY(0deg)
+        rotateZ(45deg);
+      position: absolute;
+      display: block;
+      opacity: 0.9;
+      height: $dimension;
+      width: $dimension;
+      left: 50%;
+      top: 50%;
+
+      &:nth-of-type(1) {
+        margin-top: $dimension/2;
+        background: var(--borderDark);
+        animation: layer-move-down $duration cubic-bezier(0.39, 0.575, 0.565, 1)
+          $duration/2 infinite normal;
+
+        &::before {
+          background: var(--iconPrimary);
+          transform: translate(-50%, -50%);
+          position: absolute;
+          content: '';
+          height: 85%;
+          width: 85%;
+          left: 50%;
+          top: 50%;
+        }
+      }
+
+      &:nth-of-type(2) {
+        background: var(--secondary);
+        margin-top: $dimension/4;
+      }
+
+      &:nth-of-type(3) {
+        background: var(--primary);
+        animation: layer-move-up $duration cubic-bezier(0.39, 0.575, 0.565, 1)
+          infinite normal;
+      }
+    }
+  }
+
+  &--opacity {
+    &::before {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}

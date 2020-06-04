@@ -1,0 +1,7 @@
+@import '../../../../styles/configs';
+
+.collapse-icon {
+  &--open {
+    transform: rotate(180deg);
+  }
+}

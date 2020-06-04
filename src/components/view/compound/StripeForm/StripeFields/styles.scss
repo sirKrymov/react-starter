@@ -1,0 +1,40 @@
+.stripe-fields {
+  .input__field {
+    padding: 0 15px;
+    font-weight: 500;
+  }
+
+  .StripeElement {
+    padding: 12px 0;
+  }
+
+  &__payment-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__payment-icon {
+    margin-left: 5px;
+    width: 25px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__fields-row {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    display: grid;
+  }
+
+  &__checkbox-row {
+    align-items: center;
+    display: flex;
+  }
+
+  &__checkbox--text {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,85 @@
+@import '../../../../styles/configs';
+
+.button {
+  border-radius: $border-radius;
+  line-height: 1;
+  transition: opacity $anim-time-fast, background-color $anim-time-fast,
+    border-color $anim-time-fast, color $anim-time-fast;
+  min-height: inherit;
+  padding: 0 16px;
+  width: 100%;
+
+  &:active {
+    opacity: 0.75;
+  }
+
+  &__content {
+    align-items: center;
+    display: inline-flex;
+  }
+
+  &--loading {
+    pointer-events: none;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--color-secondary {
+    background-color: var(--secondary);
+    color: var(--secondaryContrastText);
+
+    &.button--variant-outlined {
+      background-color: transparent;
+      border: 2px solid var(--secondary);
+      color: var(--secondary);
+
+      &:hover {
+        background-color: var(--secondary);
+        color: var(--secondaryContrastText);
+      }
+    }
+
+    &.button--variant-contained {
+      background-color: var(--secondary);
+      box-shadow: $box-shadow-light;
+      color: var(--secondaryContrastText);
+
+      &:hover {
+        background-color: var(--secondaryDark);
+      }
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--padding-xs {
+    padding: 0 16px;
+  }
+
+  &--padding-sm {
+    padding: 0 24px;
+  }
+
+  &--padding-md {
+    padding: 0 32px;
+  }
+
+  &--padding-lg {
+    padding: 0 40px;
+  }
+
+  &--font-weight-bold {
+    font-weight: 700;
+  }
+
+  &--font-weight-default {
+    font-weight: initial;
+  }
+}

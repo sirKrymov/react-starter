@@ -1,0 +1,23 @@
+@import '../../../../styles/configs';
+@import '../../../../styles/mixins';
+
+.dropdown-menu {
+  position: relative;
+
+  &__list {
+    background-color: var(--bgSecondary);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-card;
+    animation: mount $anim-time-slow;
+    min-width: 200px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  &--open {
+    .dropdown-menu__button-wrapper {
+      pointer-events: none;
+    }
+  }
+}

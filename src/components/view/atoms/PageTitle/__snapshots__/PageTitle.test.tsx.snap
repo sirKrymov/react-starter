@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageTitle> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<Typography
+  className="page-title"
+  variant="h1"
+>
+  Check test text
+</Typography>
+`;

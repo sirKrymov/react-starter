@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="loader loader--color-secondary loader--size-md"
+/>
+`;

@@ -1,0 +1,6 @@
+@import '../../../../styles/mixins';
+
+.application-fallback {
+  min-height: 100px;
+  @include center;
+}

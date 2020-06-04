@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormBlock> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="form-block"
+>
+  <Memo(ButtonBase)
+    id="test"
+  >
+    Test
+  </Memo(ButtonBase)>
+</div>
+`;

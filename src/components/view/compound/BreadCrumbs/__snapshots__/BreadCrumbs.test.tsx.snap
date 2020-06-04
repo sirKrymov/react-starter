@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardWrapper> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<ul
+  className="bread-crumbs"
+>
+  <li>
+    <p
+      className="typography typography--display-initial typography--variant-body3 typography--color-textPrimary typography--align-left typography--font-roboto"
+    >
+      <a
+        className="custom-link"
+        href="/to-test-one"
+        id="breadcrumb-test-id-link-0"
+        onClick={[Function]}
+      >
+        Test one
+      </a>
+    </p>
+    <span
+      className="bread-crumbs__arrow"
+    >
+      <div
+        className="svg-icon svg-icon--rotate-270 svg-icon--color-on-primary svg-icon--size-xs"
+      />
+    </span>
+  </li>
+  <li>
+    <p
+      className="typography typography--display-initial typography--variant-body3 typography--color-textPrimary typography--align-left typography--font-roboto"
+    >
+      Test two
+    </p>
+  </li>
+</ul>
+`;

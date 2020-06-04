@@ -1,0 +1,37 @@
+.loader {
+  border-radius: 50%;
+  border-style: solid;
+  animation: loaderAnim 0.8s infinite, show 0.4s;
+  margin: auto;
+
+  &--color-primary {
+    border-color: var(--primary) transparent var(--primary) transparent;
+  }
+
+  &--color-secondary {
+    border-color: var(--secondary) transparent var(--secondary) transparent;
+  }
+
+  &--color-on-secondary {
+    border-color: var(--secondaryContrastText) transparent
+      var(--secondaryContrastText) transparent;
+  }
+
+  &--size-sm {
+    border-width: 2px;
+    height: 26px;
+    width: 26px;
+  }
+
+  &--size-md {
+    border-width: 3px;
+    height: 34px;
+    width: 34px;
+  }
+
+  &--size-lg {
+    border-width: 4px;
+    height: 54px;
+    width: 54px;
+  }
+}

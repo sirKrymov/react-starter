@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button> atom component WHEN the component have loading proccess THEN it should match snapshot with loading: With loading 1`] = `
+<UiSize>
+  <button
+    className="button button--font-weight-bold button--variant-contained button--color-secondary button--loading"
+    id="button"
+    type="button"
+  >
+    <Loader
+      color="on-secondary"
+    />
+  </button>
+</UiSize>
+`;
+
+exports[`<Button> atom component WHEN the component loads THEN it should match initial snapshot: Initial 1`] = `
+<UiSize>
+  <button
+    className="button button--font-weight-bold button--variant-contained button--color-secondary"
+    id="button"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="button__content"
+    >
+      <Typography
+        color="inherit"
+        variant="inherit"
+      >
+        Test
+      </Typography>
+    </div>
+  </button>
+</UiSize>
+`;

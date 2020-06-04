@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VisibilityIcon> atom component WHEN the component loaded and have been clicked THEN it should match visible snapshot 1`] = `
+<div
+  className="visibility-icon"
+  id="check-visibility-icon"
+  onClick={[Function]}
+>
+  <SvgIcon
+    size="lg"
+    src="eye_crossed.svg"
+  />
+</div>
+`;
+
+exports[`<VisibilityIcon> atom component WHEN the component loads THEN it should match unvisible snapshot 1`] = `
+<div
+  className="visibility-icon"
+  id="check-visibility-icon"
+  onClick={[Function]}
+>
+  <SvgIcon
+    size="lg"
+    src="eye.svg"
+  />
+</div>
+`;

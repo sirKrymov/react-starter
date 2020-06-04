@@ -1,0 +1,118 @@
+/* stylelint-disable selector-max-compound-selectors, max-nesting-depth */
+@import '../../../../styles/configs';
+@import '../../../../styles/mixins';
+
+.date-picker {
+  min-height: inherit;
+  position: relative;
+
+  .react-datepicker-wrapper {
+    min-height: inherit;
+    width: 100%;
+
+    .react-datepicker {
+      &__input-container {
+        min-height: inherit;
+
+        input {
+          -webkit-appearance: none;
+          background-color: var(--bgPrimary);
+          border-radius: $border-radius;
+          transition: border-color $anim-time-fast,
+            background-color $anim-time-fast, opacity $anim-time;
+          box-shadow: none;
+          min-height: inherit;
+          padding: 0 16px;
+          outline: none;
+          border: 1px solid var(--borderPrimary);
+          color: var(--textPrimary);
+          width: 100%;
+
+          &::placeholder {
+            color: var(--textHint);
+          }
+
+          &:focus {
+            border-color: var(--thirdy);
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--right-block-xs {
+    .react-datepicker-wrapper {
+      .react-datepicker__input-container {
+        input {
+          padding-right: 28px;
+        }
+      }
+    }
+  }
+
+  &--right-block-sm {
+    .react-datepicker-wrapper {
+      .react-datepicker__input-container {
+        input {
+          padding-right: 36px;
+        }
+      }
+    }
+  }
+
+  &--right-block-md {
+    .react-datepicker-wrapper {
+      .react-datepicker__input-container {
+        input {
+          padding-right: 44px;
+        }
+      }
+    }
+  }
+
+  &--right-block-lg {
+    .react-datepicker-wrapper {
+      .react-datepicker__input-container {
+        input {
+          padding-right: 52px;
+        }
+      }
+    }
+  }
+
+  &--error {
+    .react-datepicker-wrapper {
+      .react-datepicker__input-container {
+        input {
+          border-color: var(--error);
+        }
+      }
+    }
+  }
+
+  &__right-block {
+    transform: translateY(-50%);
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 50%;
+    @include center;
+
+    &--xs {
+      width: 28px;
+    }
+
+    &--sm {
+      width: 36px;
+    }
+
+    &--md {
+      width: 44px;
+    }
+
+    &--lg {
+      width: 52px;
+    }
+  }
+}

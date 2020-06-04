@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chat> page component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="content-limiter"
+>
+  <div>
+    Chat screen
+  </div>
+</div>
+`;

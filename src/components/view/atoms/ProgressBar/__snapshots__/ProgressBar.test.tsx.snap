@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProgressBar> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="progress-bar"
+>
+  <div
+    className="progress-bar__outer"
+  >
+    <div
+      className="progress-bar__fill"
+      style={
+        Object {
+          "width": "calc(10% + 1px)",
+        }
+      }
+    />
+  </div>
+  <Typography
+    className="progress-bar__label"
+    variant="subtitle3"
+  >
+    10%
+  </Typography>
+</div>
+`;

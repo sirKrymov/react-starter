@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="modal modal--open"
+>
+  <div
+    className="modal__content modal__content--width-sm"
+  >
+    <div
+      className="modal__body"
+    >
+      <div
+        id="modal-children"
+      >
+        Check modal test content
+      </div>
+    </div>
+  </div>
+  <div
+    className="modal__backdrop"
+  />
+</div>
+`;

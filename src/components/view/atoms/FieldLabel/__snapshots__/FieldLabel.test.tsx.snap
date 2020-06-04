@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSearch> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="field-label field-label--with-error"
+  id=""
+>
+  <Textarea
+    id="check-textarea"
+    name="textarea"
+    onChange={[MockFunction]}
+    value=""
+  />
+</div>
+`;

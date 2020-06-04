@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CountryFlagSelect> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="country-flag-select"
+  id="check-country-flag-select"
+>
+  <ReactFlagsSelect
+    alignOptions="right"
+    blackList={false}
+    countries={
+      Array [
+        "GB",
+      ]
+    }
+    customLabels={Object {}}
+    defaultCountry="GB"
+    disabled={false}
+    onSelect={[MockFunction]}
+    optionsSize={14}
+    placeholder="Select a country"
+    searchPlaceholder="Search"
+    searchable={false}
+    selectedSize={16}
+    showOptionLabel={false}
+    showSelectedLabel={false}
+  />
+</div>
+`;

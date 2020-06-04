@@ -1,0 +1,84 @@
+@import '../../../../styles/configs';
+@import '../../../../styles/mixins';
+
+.toasts {
+  list-style-type: none;
+  z-index: 1000000;
+  position: fixed;
+  padding: 0 16px;
+  bottom: 0;
+  width: 300px;
+  right: 0;
+
+  &__item {
+    background-color: var(--bgSecondary);
+    border-radius: $border-radius;
+    align-items: center;
+    box-shadow: $box-shadow-card;
+    transition: all 0.5s;
+    max-height: 0;
+    min-height: 60px;
+    animation: fade-in 0.5s forwards;
+    position: relative;
+    display: flex;
+    padding: 8px 20px;
+    height: 100%;
+
+    &--info {
+      .toasts__item-type {
+        background-color: var(--thirdy);
+      }
+    }
+
+    &--warning {
+      .toasts__item-type {
+        background-color: var(--warning);
+      }
+    }
+
+    &--success {
+      .toasts__item-type {
+        background-color: var(--valid);
+      }
+    }
+
+    &--error {
+      .toasts__item-type {
+        background-color: var(--error);
+      }
+    }
+
+    &--hide {
+      animation: fade-out 0.3s forwards;
+    }
+  }
+
+  &__item-type {
+    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    transform: translateY(-50%);
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 20px;
+    left: 0;
+    top: 50%;
+  }
+
+  &__type-icon {
+    color: var(--primary);
+  }
+
+  &__item-message {
+    margin-left: 12px;
+  }
+
+  &__item-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

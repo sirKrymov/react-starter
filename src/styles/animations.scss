@@ -1,0 +1,114 @@
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// For Modal component
+@keyframes modal-content {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// For component Anim
+@keyframes mount {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes loaderAnim {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showDropdownBlock {
+  from {
+    transform: translateY(32px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+
+// For component FullScreenLoader
+@keyframes layer-move-up {
+  0%,
+  60%,
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg) rotateY(0deg) rotateZ(45deg)
+      translateZ(0);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) rotateX(50deg) rotateY(0deg) rotateZ(45deg)
+      translateZ(1em);
+  }
+}
+
+@keyframes layer-move-down {
+  0%,
+  60%,
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg) rotateY(0deg) rotateZ(45deg)
+      translateZ(0);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) rotateX(50deg) rotateY(0deg) rotateZ(45deg)
+      translateZ(-1em);
+  }
+}
+
+// For component Toasts
+@keyframes fade-in {
+  0% {
+    margin-bottom: -24px;
+    transform: translateY(100%) scale(0.75);
+    max-height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    max-height: 200px;
+    margin-bottom: 16px;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    margin-bottom: 16px;
+    max-height: 200px;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center center;
+    margin-bottom: -56px;
+    transform: scale(0.75) translateY(50%);
+    opacity: 0;
+  }
+}

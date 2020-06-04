@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rating> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="rating"
+>
+  <RatingAPILayer
+    direction="ltr"
+    emptySymbol={
+      <ReactIcon>
+        <IoIosStarOutline />
+      </ReactIcon>
+    }
+    fractions={1}
+    fullSymbol={
+      <ReactIcon>
+        <IoIosStar />
+      </ReactIcon>
+    }
+    initialRating={4}
+    onChange={[MockFunction]}
+    onClick={[Function]}
+    onHover={[Function]}
+    placeholderSymbol={
+      Object {
+        "backgroundColor": "red",
+        "border": "5px double white",
+        "borderRadius": "50%",
+        "display": "inline-block",
+        "height": 30,
+        "width": 30,
+      }
+    }
+    quiet={false}
+    readonly={false}
+    start={0}
+    step={1}
+    stop={5}
+  />
+</div>
+`;

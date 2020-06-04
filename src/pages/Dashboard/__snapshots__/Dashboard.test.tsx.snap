@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard> page component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="default-template"
+>
+  <header
+    className="default-header"
+  >
+    <div
+      className="content-limiter"
+    >
+      <div
+        className="default-header__content"
+      >
+        <div
+          className="logo"
+          id="default-logo"
+        >
+          <img
+            alt="logo"
+            className="img-contain"
+            src="krymov-logo.png"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        >
+          <div
+            className="country-flag-select"
+            id="multi-language-select"
+          >
+            <div
+              className="flag-select "
+            >
+              <button
+                aria-expanded={false}
+                aria-haspopup="listbox"
+                aria-labelledby="select_flag_button"
+                className="flag-select__btn"
+                disabled={false}
+                id="select_flag_button"
+                onClick={[Function]}
+                onKeyUp={[Function]}
+                style={
+                  Object {
+                    "fontSize": "16px",
+                  }
+                }
+              >
+                <span
+                  className="flag-select__option flag-select__option--placeholder"
+                >
+                  <img
+                    alt="GB"
+                    className="flag-select__option__icon"
+                    src={
+                      Object {
+                        "ReactComponent": Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "render": [Function],
+                        },
+                        "__esModule": true,
+                        "default": "gb.svg",
+                      }
+                    }
+                  />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div
+            className="dropdown-menu"
+          >
+            <div
+              className="dropdown-menu__button-wrapper"
+            >
+              <div
+                className="account-info"
+                onClick={[Function]}
+              >
+                <div
+                  className="avatar avatar--xs"
+                  id="account-info-avatar"
+                  style={Object {}}
+                >
+                  <img
+                    alt="avatar"
+                    className="img-cover"
+                    src="https://f0.pngfuel.com/png/980/886/male-portrait-avatar-png-clip-art.png"
+                  />
+                </div>
+                <p
+                  className="typography typography--display-initial typography--variant-body2 typography--color-textDark typography--align-left typography--font-roboto typography--nowrap account-info__name"
+                >
+                  Yevgeniy
+                </p>
+                <div
+                  className="collapse-icon"
+                  id="account-info-collapse-icon"
+                >
+                  <div
+                    className="react-icon react-icon--color-on-primary react-icon--size-md"
+                  >
+                    <svg
+                      baseProfile="tiny"
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      strokeWidth="0"
+                      style={
+                        Object {
+                          "color": undefined,
+                        }
+                      }
+                      version="1.2"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.8 9.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.4-.3.7s.1.5.3.7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div
+      className="content-limiter"
+    >
+      <a
+        className="custom-link"
+        href="/weather"
+        id="weather-page-link"
+        onClick={[Function]}
+      >
+        Weather
+      </a>
+      <div>
+        <p>
+          Test
+        </p>
+        <p>
+          0
+        </p>
+        <p>
+          0
+        </p>
+        <button
+          onClick={[Function]}
+        >
+          Increase
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Decrease
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Modal
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Add toast info
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Add toast warning
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Add toast success
+        </button>
+        <button
+          onClick={[Function]}
+        >
+          Add toast error
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+`;

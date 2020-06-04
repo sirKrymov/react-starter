@@ -1,0 +1,9 @@
+@import '../../../../styles/configs';
+@import '../../../../styles/mixins';
+
+.card-wrapper {
+  background-color: var(--bgSecondary);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-card;
+  min-height: 100px;
+}

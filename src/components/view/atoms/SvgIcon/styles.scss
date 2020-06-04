@@ -1,0 +1,95 @@
+@import '../../../../styles/mixins';
+
+.svg-icon {
+  > div {
+    @include center;
+  }
+
+  &--size-xs {
+    @include svg-size(10px);
+  }
+
+  &--size-sm {
+    @include svg-size(12px);
+  }
+
+  &--size-md {
+    @include svg-size(16px);
+  }
+
+  &--size-lg {
+    @include svg-size(20px);
+  }
+
+  &--size-xl {
+    @include svg-size(24px);
+  }
+
+  &--size-xxl {
+    @include svg-size(32px);
+  }
+
+  &--size-xxxl {
+    @include svg-size(40px);
+  }
+
+  &--color-primary {
+    @include svg-color(var(--primary));
+  }
+
+  &--color-on-primary {
+    @include svg-color(var(--onPrimary));
+  }
+
+  &--color-secondary {
+    @include svg-color(var(--secondary));
+  }
+
+  &--color-thirdy {
+    @include svg-color(var(--thirdy));
+  }
+
+  &--color-valid {
+    @include svg-color(var(--valid));
+  }
+
+  &--color-error {
+    @include svg-color(var(--error));
+  }
+
+  &--rotate-90 {
+    transform: rotate(90deg);
+  }
+
+  &--rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  &--rotate-270 {
+    transform: rotate(270deg);
+  }
+
+  &--rotate-360 {
+    transform: rotate(360deg);
+  }
+
+  &--top-1 {
+    margin-top: 1px;
+  }
+
+  &--top-2 {
+    margin-top: 2px;
+  }
+
+  &--top-3 {
+    margin-top: 3px;
+  }
+
+  &--top-4 {
+    margin-top: 4px;
+  }
+
+  &--pointer {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSearch> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<UiSize
+  height="md"
+>
+  <div
+    className="input-search input-search--icon-wrapper-md"
+  >
+    <div
+      className="input-search__icon-wrapper input-search__icon-wrapper--md"
+      style={Object {}}
+    >
+      <ReactIcon>
+        <IoIosSearch />
+      </ReactIcon>
+    </div>
+    <input
+      autoComplete="off"
+      id="check-search"
+      name="search"
+      onChange={[MockFunction]}
+      placeholder="Search..."
+      type="text"
+      value=""
+    />
+  </div>
+</UiSize>
+`;

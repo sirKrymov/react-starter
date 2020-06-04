@@ -1,0 +1,10 @@
+.default-template {
+  background-color: var(--bgPrimary);
+  min-height: 100vh;
+  position: relative;
+  padding: 84px 24px;
+
+  main {
+    width: 100%;
+  }
+}

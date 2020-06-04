@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Default> template component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="auth-template"
+>
+  <Memo(wrappedComponent) />
+  <main>
+    <div>
+      Test
+    </div>
+  </main>
+</div>
+`;

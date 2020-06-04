@@ -1,0 +1,18 @@
+@import '../../../../styles/configs';
+
+.custom-link {
+  text-decoration: none;
+  transition: color $anim-time-fast;
+  color: var(--thirdy);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--thirdyDark);
+  }
+
+  &--underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

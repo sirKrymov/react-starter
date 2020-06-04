@@ -1,0 +1,55 @@
+@import '../../../../../styles/configs';
+@import '../../../../../styles/mixins';
+
+.pagination {
+  user-select: none;
+
+  &__container {
+    align-items: center;
+    display: flex;
+
+    > * {
+      margin: 0 5px;
+    }
+  }
+
+  &__item {
+    transition: $anim-time;
+    border-radius: 50%;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    @include flex;
+
+    &:hover {
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+  }
+
+  &__next {
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    border: 1px solid var(--secondary);
+    margin: 0 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    @include flex;
+
+    a {
+      height: 100%;
+      width: 100%;
+      @include flex;
+    }
+  }
+
+  &__active {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+
+  &__active-link {
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<UiSize
+  height="md"
+>
+  <div
+    className="input"
+  >
+    <input
+      autoComplete="off"
+      id="check-input"
+      name="input"
+      onChange={[MockFunction]}
+      type="text"
+      value=""
+    />
+  </div>
+</UiSize>
+`;

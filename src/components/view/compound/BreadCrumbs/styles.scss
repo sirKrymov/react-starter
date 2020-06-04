@@ -1,0 +1,16 @@
+.bread-crumbs {
+  margin-bottom: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+
+  li {
+    align-items: center;
+    display: flex;
+  }
+
+  &__arrow {
+    display: block;
+    margin: 0 6px;
+  }
+}

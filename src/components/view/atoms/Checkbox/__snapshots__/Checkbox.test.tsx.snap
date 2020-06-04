@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch> atom component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="checkbox"
+>
+  <input
+    checked={false}
+    id="checkboxID"
+    name="checkbox"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="checkbox__label"
+    htmlFor="checkboxID"
+  >
+    <span
+      className="checkbox__icon"
+    >
+      <IoMdCheckmark />
+    </span>
+  </label>
+</div>
+`;

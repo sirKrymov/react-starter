@@ -1,0 +1,62 @@
+@import '../../../../styles/configs';
+@import '../../../../styles/mixins';
+
+.wysiwyg {
+  border-radius: $border-radius;
+  transition: $anim-time;
+  border: 1px solid var(--borderPrimary);
+
+  &__field {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    font-family: Arial;
+    background: var(--bgPrimary);
+    min-height: 120px;
+    padding: 6px 18px;
+  }
+
+  &__toolbar {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    background: var(--bgPrimary);
+    padding: 8px;
+    border: 0;
+    margin: 0;
+
+    * {
+      margin-bottom: 0;
+    }
+
+    .rdw-option-wrapper {
+      background: none;
+      margin: 0 6px;
+      border: 0;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    .rdw-option-active {
+      box-shadow: none;
+    }
+
+    .rdw-history-wrapper img {
+      width: 16px;
+    }
+  }
+
+  &--error {
+    border: 1px solid var(--error);
+  }
+
+  &--read-only {
+    opacity: 0.6;
+
+    .rdw-option-wrapper {
+      cursor: default;
+    }
+  }
+}

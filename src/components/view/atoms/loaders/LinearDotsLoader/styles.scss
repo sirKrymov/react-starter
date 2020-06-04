@@ -1,0 +1,67 @@
+@import '../../../../../styles/mixins';
+@import '../../../../../styles/configs';
+
+.linear-dots-loader {
+  margin-bottom: 0;
+  @include center;
+
+  span {
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-name: blink;
+    border-radius: 50%;
+    display: block;
+
+    &:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+  }
+
+  &--stretch {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--primary {
+    span {
+      background-color: var(--primary);
+    }
+  }
+
+  &--secondary {
+    span {
+      background-color: var(--secondary);
+    }
+  }
+
+  &--sm {
+    span {
+      width: 6px;
+      height: 6px;
+      margin: 2px;
+    }
+  }
+
+  &--md {
+    span {
+      width: 8px;
+      height: 8px;
+      margin: 3px;
+    }
+  }
+
+  &--lg {
+    span {
+      width: 12px;
+      height: 12px;
+      margin: 4px;
+    }
+  }
+}

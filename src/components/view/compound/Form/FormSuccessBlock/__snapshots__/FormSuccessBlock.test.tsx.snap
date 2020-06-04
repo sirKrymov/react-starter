@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormSuccessBlock> compound component WHEN the component loads THEN it should match snapshot 1`] = `
+<div
+  className="form-success-block"
+>
+  <div
+    className="form-block form-block--mb-s6 form-block--align-center"
+  >
+    <div
+      className="form-success-block__icon"
+    >
+      <div
+        className="react-icon react-icon--color-valid react-icon--size-xxxl"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    className="form-block form-block--mb-s6"
+  >
+    <p
+      className="typography typography--display-initial typography--variant-body1 typography--color-textPrimary typography--align-center typography--font-roboto"
+    >
+      Success test
+    </p>
+  </div>
+  <div
+    className="ui-size ui-size--height-lg ui-size--width-full"
+  >
+    <a
+      className="link-button button--font-weight-bold link-button--variant-contained link-button--color-secondary"
+      href="/"
+      id="form-success-block-link"
+      onClick={[Function]}
+    >
+      <p
+        className="typography typography--display-initial typography--variant-inherit typography--color-inherit typography--align-left typography--font-roboto"
+      >
+        Back to sign in
+      </p>
+    </a>
+  </div>
+</div>
+`;
