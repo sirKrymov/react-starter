@@ -1,6 +1,5 @@
 {
   "hooks": {
     "pre-commit": "tsc --noEmit && lint-staged && stylelint 'src/**/*.scss'",
-    "pre-push": "npm run test:all"
   }
 }
