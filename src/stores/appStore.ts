@@ -1,19 +1,19 @@
 import { observable, action } from 'mobx';
 
-import AuthService from '../services/AuthService';
-import history from '../utils/history';
+import AuthService from 'services/AuthService';
+import history from 'utils/history';
 
-import { UserRoles } from '../constants/permissions';
-import { redirect } from '../constants/system';
+import { UserRoles } from 'constants/permissions';
+import { redirect } from 'constants/system';
 
+import { IAccount } from 'types/account.interface';
+import { Request } from 'types/request-params.type';
 import {
   IResetPasswordRequest,
   INewPasswordRequest,
   ISigninRequest,
   ISignupRequest
-} from '../types/auth.interface';
-import { IAccount } from 'types/account.interface';
-import { Request } from 'types/request-params.type';
+} from 'types/auth.interface';
 
 export interface IAppStore {
   systemError: boolean;
@@ -47,7 +47,7 @@ export class AppStore {
   };
 
   @action
-  public login = (values: ISigninRequest) => {
+  public login = (values: ISigninRequest): void => {
     AuthService.unsetAccessToken();
     console.log('sign in', values);
 
@@ -94,7 +94,7 @@ export class AppStore {
   };
 
   @action
-  private testAction = () => {
+  private testAction = (): void => {
     AuthService.setAccessToken('test');
 
     this.fetching = false;
@@ -104,7 +104,7 @@ export class AppStore {
   };
 
   @action
-  public clearAppStore = () => {
+  public clearAppStore = (): void => {
     this.systemError = false;
     this.fetching = false;
     this.account = {

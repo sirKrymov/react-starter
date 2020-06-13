@@ -1,12 +1,12 @@
-import { useStores } from '../hooks/useStores';
+import { useStores } from 'hooks/useStores';
 
-import { Toast as ToastType } from '../types/toasts.type';
+import { Toast as ToastType } from 'types/toasts.type';
 
-export const useToast = () => {
+export const useToast = (): Record<string, any> => {
   const { toastsStore } = useStores();
 
   return {
-    info: (message: string, options?: Partial<ToastType>) => {
+    info: (message: string, options?: Partial<ToastType>): void => {
       if (toastsStore) {
         toastsStore.addToast({
           message,
@@ -16,13 +16,13 @@ export const useToast = () => {
       }
     },
 
-    warning: (message: string, options?: Partial<ToastType>) => {
+    warning: (message: string, options?: Partial<ToastType>): void => {
       if (toastsStore) {
         toastsStore.addToast({ message, type: 'warning', ...options });
       }
     },
 
-    success: (message: string, options?: Partial<ToastType>) => {
+    success: (message: string, options?: Partial<ToastType>): void => {
       if (toastsStore) {
         toastsStore.addToast({
           message,
@@ -32,7 +32,7 @@ export const useToast = () => {
       }
     },
 
-    error: (message: string, options?: Partial<ToastType>) => {
+    error: (message: string, options?: Partial<ToastType>): void => {
       if (toastsStore) {
         toastsStore.addToast({
           message,
@@ -42,14 +42,14 @@ export const useToast = () => {
       }
     },
 
-    hide: (id: ToastType['id']) => {
+    hide: (id: ToastType['id']): void => {
       toastsStore.removeToast(id);
     },
 
-    hideIsLoading: () => {
+    hideIsLoading: (): void => {
       if (toastsStore) {
         const isLoadingToasts = toastsStore.toasts.filter(
-          ({ isLoading }) => isLoading
+          ({ isLoading }: { isLoading: boolean }) => isLoading
         );
         const lastLoadingToast = isLoadingToasts[isLoadingToasts.length - 1];
 

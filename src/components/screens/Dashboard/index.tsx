@@ -9,7 +9,6 @@ import { useStores } from 'hooks/useStores';
 
 export const DashboardScreen = observer(() => {
   const { dashboardStore, modalStore, toastsStore } = useStores();
-
   const { increaseCount, decreaseCount, doubleCount, count } = dashboardStore;
   const { modalName, openModal, closeModal } = modalStore;
   const { addToast } = toastsStore;
@@ -19,31 +18,29 @@ export const DashboardScreen = observer(() => {
       <div>
         <p>Test</p>
         <p>{count}</p>
-
         <p>{doubleCount}</p>
+        <button onClick={increaseCount}>Increase</button>
+        <button onClick={decreaseCount}>Decrease</button>
 
-        <button onClick={() => increaseCount()}>Increase</button>
-        <button onClick={() => decreaseCount()}>Decrease</button>
+        <button onClick={(): void => openModal('dashboardModal')}>Modal</button>
 
-        <button onClick={() => openModal('dashboardModal')}>Modal</button>
-
-        <button onClick={() => addToast({ message: nanoid() })}>
+        <button onClick={(): void => addToast({ message: nanoid() })}>
           Add toast info
         </button>
         <button
-          onClick={() =>
+          onClick={(): void =>
             addToast({ message: nanoid(), type: 'warning', autohide: false })
           }
         >
           Add toast warning
         </button>
         <button
-          onClick={() => addToast({ message: nanoid(), type: 'success' })}
+          onClick={(): void => addToast({ message: nanoid(), type: 'success' })}
         >
           Add toast success
         </button>
         <button
-          onClick={() =>
+          onClick={(): void =>
             addToast({ message: nanoid(), type: 'error', autohide: false })
           }
         >
@@ -52,7 +49,7 @@ export const DashboardScreen = observer(() => {
       </div>
 
       <Modal
-        onClose={() => closeModal()}
+        onClose={closeModal}
         title="Modal title"
         open={modalName === 'dashboardModal'}
       >

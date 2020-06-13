@@ -72,7 +72,7 @@ export class ToastsStore {
   );
 
   @action
-  private shiftToast = () => this.toasts.shift();
+  private shiftToast = (): Toast => this.toasts.shift() as Toast;
 
   @action
   public clearToastsStore = (): void => {

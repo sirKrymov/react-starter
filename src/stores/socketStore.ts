@@ -2,12 +2,12 @@ import { observable, action } from 'mobx';
 import openSocket from 'socket.io-client';
 import { nanoid } from 'nanoid';
 
-import AuthService from '../services/AuthService';
-import { logger } from '../utils';
-import history from '../utils/history';
+import AuthService from 'services/AuthService';
+import { logger } from 'utils';
+import history from 'utils/history';
 
-import { WebSocketEvents } from '../constants/wsEvents';
-import { redirect } from '../constants/system';
+import { WebSocketEvents } from 'constants/wsEvents';
+import { redirect } from 'constants/system';
 
 export interface ISocketStore {
   isConnected: boolean;
@@ -23,7 +23,7 @@ export class SocketStore {
   @observable token: ISocketStore['token'] = null;
 
   @action
-  public socketConnect = () => {
+  public socketConnect = (): void => {
     try {
       const wsProvider = process.env.REACT_APP_BACKEND_WS_ENDPOINT;
       const logoutUrl = process.env.REACT_APP_LOGOUT_URL;
@@ -76,7 +76,7 @@ export class SocketStore {
   };
 
   @action
-  private requestData = (data: Record<string, any>) => {
+  private requestData = (data: Record<string, any>): Record<string, any> => {
     return {
       requestId: nanoid(),
       data
@@ -84,22 +84,22 @@ export class SocketStore {
   };
 
   @action
-  private subscribe = (event: string, callback: Function) => {
+  private subscribe = (event: string, callback: Function): void => {
     this.socket && this.socket.on(event, callback);
   };
 
   @action
-  private emit = (event: string, data: Record<string, any>) => {
+  private emit = (event: string, data: Record<string, any>): void => {
     this.socket && this.socket.emit(event, this.requestData(data));
   };
 
   @action
-  public closeSocket = () => {
+  public closeSocket = (): void => {
     this.socket && this.socket.close();
   };
 
   @action
-  public clearSocketStore = () => {
+  public clearSocketStore = (): void => {
     this.isConnected = false;
     this.systemError = '';
     this.socket = undefined;

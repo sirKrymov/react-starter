@@ -21,6 +21,7 @@
     "js-file-downloader": "^1.1.8",
     "lodash": "^4.17.15",
     "mobx": "^5.15.4",
+    "mobx-keystone": "^0.43.1",
     "mobx-react": "^6.1.8",
     "mobx-react-lite": "^2.0.6",
     "moment": "^2.25.3",

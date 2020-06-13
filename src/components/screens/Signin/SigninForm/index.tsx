@@ -8,7 +8,7 @@ import {
   withFormik,
   FieldProps,
   FormikBag,
-  Field
+  FastField
 } from 'formik';
 
 import { Form, FormBlock, FormText } from 'components/view/compound/Form';
@@ -47,7 +47,7 @@ function SigninFormBase({
       </FormBlock>
 
       <FormBlock marginBottom="s2">
-        <Field required name="email">
+        <FastField required name="email">
           {({ field, meta: { touched, error } }: FieldProps): ReactElement => {
             return (
               <FieldLabel
@@ -65,9 +65,9 @@ function SigninFormBase({
               </FieldLabel>
             );
           }}
-        </Field>
+        </FastField>
 
-        <Field required name="password">
+        <FastField required name="password">
           {({ field, meta: { touched, error } }: FieldProps): ReactElement => {
             return (
               <FieldLabel
@@ -97,7 +97,7 @@ function SigninFormBase({
               </FieldLabel>
             );
           }}
-        </Field>
+        </FastField>
       </FormBlock>
 
       <FormBlock marginBottom="s3">

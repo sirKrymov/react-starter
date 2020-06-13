@@ -47,6 +47,7 @@ export function Input({
     },
     className
   );
+
   const rightBlockClass = cn({
     'input__right-block': true,
     [`input__right-block--${height}`]: rightBlock && height

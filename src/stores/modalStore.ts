@@ -10,14 +10,17 @@ export class ModalStore {
   @observable modalData: IModalStore['modalData'] = null;
 
   @action
-  public openModal = (name: string, data?: Record<string, any>) => {
+  public openModal = (name: string, data?: Record<string, any>): void => {
     this.modalName = name;
 
     if (data) this.modalData = data;
   };
 
   @action
-  public changeModal = (name: string, data?: Record<string, any> | 'clear') => {
+  public changeModal = (
+    name: string,
+    data?: Record<string, any> | 'clear'
+  ): void => {
     this.modalName = name;
 
     if (data && data !== 'clear') this.modalData = data;
@@ -25,13 +28,13 @@ export class ModalStore {
   };
 
   @action
-  public closeModal = () => {
+  public closeModal = (): void => {
     this.modalName = '';
     this.modalData = null;
   };
 
   @action
-  public clearModalStore = () => {
+  public clearModalStore = (): void => {
     this.modalName = '';
     this.modalData = null;
   };

@@ -18,9 +18,9 @@ export class ThemeStore {
     );
   }
 
-  private getInitialTheme = () => {
+  private getInitialTheme = (): IThemeStore['theme'] => {
     const isReturningUser = 'theme' in localStorage;
-    const savedMode = localStorage.getItem('theme');
+    const savedMode = localStorage.getItem('theme') as IThemeStore['theme'];
 
     if (isReturningUser) {
       return savedMode;
@@ -45,7 +45,7 @@ export class ThemeStore {
   };
 
   @action
-  public clearThemeStore = () => {
+  public clearThemeStore = (): void => {
     this.theme = 'light';
   };
 }

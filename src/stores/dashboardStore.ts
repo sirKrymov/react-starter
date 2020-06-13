@@ -11,22 +11,22 @@ export class DashboardStore {
   @observable count: IDashboardStore['count'] = 0;
 
   @action
-  public increaseCount = () => {
+  public increaseCount = (): void => {
     this.count++;
   };
 
   @action
-  public decreaseCount = () => {
+  public decreaseCount = (): void => {
     this.count--;
   };
 
   @computed
-  get doubleCount() {
+  get doubleCount(): IDashboardStore['count'] {
     return this.count * 2;
   }
 
   @action
-  public clearDashboardStore = () => {
+  public clearDashboardStore = (): void => {
     this.count = 0;
   };
 }

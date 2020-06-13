@@ -10,7 +10,7 @@ import {
   ChatStore,
   AppStore,
   UiStore
-} from '../stores';
+} from 'stores';
 
 export const storesContext = createContext({
   dashboardStore: new DashboardStore(),

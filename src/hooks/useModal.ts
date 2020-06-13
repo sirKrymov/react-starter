@@ -1,15 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-export const useModal = () => {
+export const useModal = (): Record<string, any> => {
   const [modal, handleModalToggle] = useState();
-
-  useEffect(() => {
-    if (modal) {
-      document.body.classList.add('overflow-hidden');
-    } else {
-      document.body.removeAttribute('class');
-    }
-  });
 
   return {
     handleModalToggle,

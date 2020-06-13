@@ -8,7 +8,7 @@ export class ChatStore {
   @observable members: IChatStore['members'] = [];
 
   @action
-  public clearUiStore = () => {
+  public clearUiStore = (): void => {
     this.members = [];
   };
 }
